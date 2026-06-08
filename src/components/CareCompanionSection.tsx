@@ -55,7 +55,7 @@ const features = [
   },
   {
     title: "Diagnostics & Resolution",
-    desc: "Practical solutions for common environmental issues, moss discoloration, and plant maintenance.",
+    desc: "Practical solutions for common issues, moss discoloration, and plant maintenance.",
     icon: IconProblems,
   },
 ];
@@ -67,7 +67,7 @@ export function CareCompanionSection() {
         <SectionHeading
           eyebrow="Care Companion"
           title="Intelligent care, calibrated to your environment."
-          description="Every Sylva Auris commission includes a dedicated companion guide. Linked directly to your vessel's unique light, humidity, and botanical profile to ensure lifelong stability."
+          description="Intelligent care, calibrated to your environment. Every Sylva Auris system includes an interactive digital care companion. Access tailored light, humidity, and maintenance profiles specific to your vessel’s botanical layout to ensure lifelong stability."
           className="mb-12 lg:mb-16"
         />
 

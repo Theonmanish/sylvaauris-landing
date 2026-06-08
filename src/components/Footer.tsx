@@ -31,7 +31,7 @@ export function Footer() {
               </span>
             </Link>
             <p className="mt-6 max-w-xs text-[13px] leading-relaxed text-muted font-sans">
-              Handcrafted enclosed ecosystems. Made by appointment for residential, commercial, and studio environments.
+              Handcrafted enclosed ecosystems, tailored for residential, hospitality, and workspace environments.
             </p>
           </div>
 

@@ -6,9 +6,9 @@ export function BuiltForSection() {
   return (
     <Section className="bg-surface border-t border-border">
       <SectionHeading
-        eyebrow="Commission Venues"
+        eyebrow="Placement Venues"
         title="Botanical art, scaled to belong."
-        description="We compositionally adapt each terrarium to visual parameters of light, airflow, and surrounding scale."
+        description="We compositionally adapt each terrarium to the unique layout, light levels, and architectural scale of its destination."
         align="center"
         className="mx-auto"
       />

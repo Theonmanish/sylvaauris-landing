@@ -27,7 +27,8 @@ function CollectionCard({ item }: { item: (typeof COLLECTION_ITEMS)[number] }) {
         <h3 className="font-display text-lg tracking-[0.02em] text-foreground transition-colors duration-300 group-hover:text-gold md:text-xl">
           {item.name}
         </h3>
-        <p className="mt-3 text-[12px] leading-relaxed text-muted line-clamp-2 md:text-[13px]">
+        {/* Fixed: Removed line-clamp-2 and added min-h to maintain uniform grid heights */}
+        <p className="mt-3 text-[12px] leading-relaxed text-muted min-h-[40px] md:text-[13px]">
           {item.description}
         </p>
       </div>

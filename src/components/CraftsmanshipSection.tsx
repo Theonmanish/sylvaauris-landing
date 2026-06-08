@@ -14,7 +14,7 @@ export function CraftsmanshipSection() {
         <SectionHeading
           eyebrow="Craftsmanship"
           title="Four movements. One enduring composition."
-          description="From raw geological elements to balanced micro-climates, each movement is executed with deliberate care and technical precision."
+          description="From raw geological elements to balanced micro-climates, each movement is executed with deliberate care ."
           className="mb-16"
         />
 

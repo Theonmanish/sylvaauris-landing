@@ -12,7 +12,7 @@ export const COLLECTION_ITEMS = [
   {
     name: "Micro Terrariums",
     description:
-      "Miniature ecosystems scaled for intimate desks and bedside shelves.",
+      "Miniature ecosystems scaled for desks and bedside shelves.",
     tag: "01 / Series",
   },
   {
@@ -39,22 +39,22 @@ export const WHY_FEATURES = [
   {
     title: "Living Ecosystems",
     description:
-      "Self-sustaining botanical environments featuring balanced micro-fauna and active moisture regulation.",
+      "Long-enduring botanical environments featuring a balanced micro-fauna and intuitive moisture cycles.",
   },
   {
     title: "Handcrafted Design",
     description:
-      "Individually composed and calibrated at our atelier to match specific architectural lines and light profiles.",
+      "Individually composed and calibrated at our atelier to match specific light profiles.",
   },
   {
     title: "Built To Endure",
     description:
-      "Constructed with premium inert minerals, slow-growing specimens, and structural glass to support decades of stability.",
+      "Constructed with premium inert substrate, slow-growing specimens, and structural glass to support decades of stability.",
   },
   {
     title: "Intelligent Care Guidance",
     description:
-      "Accompanied by bespoke seasonal insights and sensor companion integration for mindful, long-term stewardship.",
+      "Accompanied by tailored seasonal guidance and a digital care companion for mindful, long-term stewardship.",
   },
 ] as const;
 
@@ -81,25 +81,25 @@ export const CRAFTSMANSHIP_STEPS = [
     step: "01",
     title: "Material Selection",
     description:
-      "Sourcing rare specimen ferns, ancient cushion mosses, and chemically inert mineral substrates to establish a clean biological foundation.",
+      "Sourcing healthy specimen ferns, lush mosses, and proper premium substrates to build a clean, sustainable biological foundation.",
   },
   {
     step: "02",
     title: "Hardscape Design",
     description:
-      "Sculpting multi-tiered basalt and volcanic stone formations to establish visual depth, structural channels, and permanent drainage lines.",
+      "Arranging hand-selected rocks and natural driftwood to create organic visual depth, structural stability, and a reliable base drainage layer.",
   },
   {
     step: "03",
     title: "Plant Placement",
     description:
-      "Micro-planting flora with long forceps under magnification, positioning each specimen to optimize ambient light absorption and growth geometry.",
+      "Carefully anchor-planting each botanical specimen with long forceps, positioning flora to align with natural light lines and future growth room.",
   },
   {
     step: "04",
     title: "Ecosystem Balancing",
     description:
-      "Pre-equilibration incubation period to monitor moisture cycles, introducing active micro-fauna to ensure self-cleaning and natural decomposition.",
+      "Monitoring initial humidity levels and introducing a bio-active cleanup crew of micro-fauna to keep the closed ecosystem self-cleaning.",
   },
 ] as const;
 
@@ -107,26 +107,26 @@ export const BUILT_FOR_AUDIENCES = [
   {
     title: "Homes",
     description:
-      "Elevating private libraries, dining tables, and quiet bedside tables with living presence.",
+      "Elevating private libraries, dining tables, and quiet bedside tables with living presence.Introducing a grounding, living presence into intimate environments.",
   },
   {
     title: "Offices",
     description:
-      "Adding structural, self-cleaning focal points to minimalist conference and desk spaces.",
+      "Adding structural, self-cleaning focal points to minimalist conference and desk spaces.A calming structural element to balance sharp, modern interiors.",
   },
   {
     title: "Gifts",
     description:
-      "A lasting, low-maintenance living monument to mark milestone occasions and memory.",
+      "A lasting, low-maintenance living monument to mark milestone occasions and memory.A thoughtful alternative to ephemeral florals, designed to persist for years.",
   },
   {
     title: "Cafes",
     description:
-      "Intimate green sculptures positioned to dialogue with natural steam and warm light.",
+      "Intimate green sculptures positioned to dialogue with natural steam and warm light.Crafting a relaxed, sensory layer within social and dining spaces.",
   },
   {
     title: "Reception Areas",
     description:
-      "Professional gallery statement at entrance areas, projecting architectural intent.",
+      "Professional gallery statement at entrance areas, projecting architectural intent.Setting an immediate tone of architectural intent and refined design.",
   },
 ] as const;
