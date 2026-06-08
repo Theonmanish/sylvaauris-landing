@@ -9,7 +9,7 @@ export function HeroSection() {
       {/* ── Forced Visibility Texture Layer ── */}
       <div className="absolute inset-0 z-0 pointer-events-none opacity-[0.04]">
         <Image
-          src="/paper-texture.jpg" 
+          src="/paper-texture.webp" 
           alt="Texture"
           fill
           className="object-cover brightness-150 contrast-125" // Increased brightness/contrast
@@ -55,7 +55,7 @@ export function HeroSection() {
           <div className="relative flex items-center justify-center">
             <div className="relative aspect-[3/4] w-full max-h-[35vh] md:max-h-none">
               <Image
-                src="/terrarium.png"
+                src="/terrarium.webp"
                 alt="Premium living terrarium"
                 fill
                 className="object-contain"

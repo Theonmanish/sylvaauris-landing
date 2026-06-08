@@ -4,10 +4,10 @@ import { Section } from "./ui/Section";
 import { SectionHeading } from "./ui/SectionHeading";
 
 const IMAGE_MAP: Record<string, string> = {
-  "Micro Terrariums": "/micro.png",
-  "Jar Terrariums": "/jar.png",
-  "Bowl Terrariums": "/bowl.png",
-  "Cube Terrariums": "/cube.png",
+  "Micro Terrariums": "/micro.webp",
+  "Jar Terrariums": "/jar.webp",
+  "Bowl Terrariums": "/bowl.webp",
+  "Cube Terrariums": "/cube.webp",
 };
 
 function CollectionCard({ item }: { item: (typeof COLLECTION_ITEMS)[number] }) {

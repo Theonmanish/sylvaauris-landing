@@ -4,9 +4,9 @@ import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
 
 const galleryItems = [
-  { src: "/terraimages/Fittonia.jpg", name: "image1" },
-  { src: "/terraimages/Misty Glen Oasis.jpg", name: "image2" },
-  { src: "/terraimages/trm1a.jpg", name: "image3" },
+  { src: "/terraimages/Fittonia.webp", name: "image1" },
+  { src: "/terraimages/Misty Glen Oasis.webp", name: "image2" },
+  { src: "/terraimages/trm1a.webp", name: "image3" },
 ];
 
 export default function GalleryPage() {
