@@ -10,40 +10,51 @@ export const NAV_LINKS = [
 
 export const COLLECTION_ITEMS = [
   {
-    name: "Verdant Atrium",
+    name: "Micro Terrariums",
     description:
-      "A cathedral of moss and fern, sealed in hand-blown glass for quiet contemplation.",
-    tag: "Signature",
+      "Miniature ecosystems scaled for intimate desks and bedside shelves.",
+    tag: "01 / Series",
   },
   {
-    name: "Nocturne Grove",
+    name: "Jar Terrariums",
     description:
-      "Deep emerald foliage with subtle bioluminescent accents for evening spaces.",
-    tag: "Limited",
+      "Traditional closed cylinders capturing high-humidity mosses and delicate ferns.",
+    tag: "02 / Series",
   },
   {
-    name: "Aurum Terrarium",
+    name: "Bowl Terrariums",
     description:
-      "Brass-framed vessel with curated succulents and sculptural stone formations.",
-    tag: "Edition",
+      "Wide glass basins hosting low-profile moss hillsides and structural stone formations.",
+    tag: "03 / Series",
+  },
+  {
+    name: "Cube Terrariums",
+    description:
+      "Architectural glass-and-brass enclosures displaying geometric layouts.",
+    tag: "04 / Series",
   },
 ] as const;
 
 export const WHY_FEATURES = [
   {
-    title: "Living Sculpture",
+    title: "Living Ecosystems",
     description:
-      "Each piece is composed as a permanent installation—balanced, intentional, and alive.",
+      "Self-sustaining botanical environments featuring balanced micro-fauna and active moisture regulation.",
   },
   {
-    title: "Curated Ecology",
+    title: "Handcrafted Design",
     description:
-      "Plant selections are chosen for harmony, longevity, and the rhythm of your interior.",
+      "Individually composed and calibrated at our atelier to match specific architectural lines and light profiles.",
   },
   {
-    title: "Quiet Presence",
+    title: "Built To Endure",
     description:
-      "Designed to soften a room without demanding attention—a calm anchor in modern life.",
+      "Constructed with premium inert minerals, slow-growing specimens, and structural glass to support decades of stability.",
+  },
+  {
+    title: "Intelligent Care Guidance",
+    description:
+      "Accompanied by bespoke seasonal insights and sensor companion integration for mindful, long-term stewardship.",
   },
 ] as const;
 
@@ -68,38 +79,54 @@ export const CARE_FEATURES = [
 export const CRAFTSMANSHIP_STEPS = [
   {
     step: "01",
-    title: "Sourcing",
+    title: "Material Selection",
     description:
-      "Rare botanicals and mineral elements selected from trusted growers and quarries.",
+      "Sourcing rare specimen ferns, ancient cushion mosses, and chemically inert mineral substrates to establish a clean biological foundation.",
   },
   {
     step: "02",
-    title: "Composition",
+    title: "Hardscape Design",
     description:
-      "Layered substrates and structural forms built for drainage, depth, and visual rhythm.",
+      "Sculpting multi-tiered basalt and volcanic stone formations to establish visual depth, structural channels, and permanent drainage lines.",
   },
   {
     step: "03",
-    title: "Sealing",
+    title: "Plant Placement",
     description:
-      "Precision-closed environments tested for humidity equilibrium and lasting clarity.",
+      "Micro-planting flora with long forceps under magnification, positioning each specimen to optimize ambient light absorption and growth geometry.",
+  },
+  {
+    step: "04",
+    title: "Ecosystem Balancing",
+    description:
+      "Pre-equilibration incubation period to monitor moisture cycles, introducing active micro-fauna to ensure self-cleaning and natural decomposition.",
   },
 ] as const;
 
 export const BUILT_FOR_AUDIENCES = [
   {
-    title: "Design Studios",
+    title: "Homes",
     description:
-      "Statement pieces that complement architectural lines and curated material palettes.",
+      "Elevating private libraries, dining tables, and quiet bedside tables with living presence.",
   },
   {
-    title: "Private Residences",
+    title: "Offices",
     description:
-      "Bespoke terrariums scaled for entryways, libraries, and intimate living spaces.",
+      "Adding structural, self-cleaning focal points to minimalist conference and desk spaces.",
   },
   {
-    title: "Hospitality",
+    title: "Gifts",
     description:
-      "Enduring green installations for lobbies, suites, and signature dining rooms.",
+      "A lasting, low-maintenance living monument to mark milestone occasions and memory.",
+  },
+  {
+    title: "Cafes",
+    description:
+      "Intimate green sculptures positioned to dialogue with natural steam and warm light.",
+  },
+  {
+    title: "Reception Areas",
+    description:
+      "Professional gallery statement at entrance areas, projecting architectural intent.",
   },
 ] as const;

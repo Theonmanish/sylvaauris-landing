@@ -1,40 +1,91 @@
 @import "tailwindcss";
 
+/* ─────────────────────────────────────────
+   Design Tokens — Sylva Auris
+   Luxury botanical gallery · Dark editorial
+   ───────────────────────────────────────── */
 :root {
-  --background: #0c0f0d;
-  --foreground: #f2efe8;
-  --muted: #9a9a8f;
-  --gold: #c9a96e;
-  --forest: #2d4a3e;
-  --surface: #121614;
-  --surface-elevated: #181c19;
-  --border: #2a302c;
+  --background:       #0B0D0B;
+  --surface:          #111311;
+  --cards:            #161916;
+  --surface-elevated: #161916;
+
+  --foreground:       #EAE4D8;
+  --muted:            #A8A89C;
+  --subtle:           #6B6B62;
+
+  --gold:             #B99868;
+  --gold-muted:       #8C7550;
+
+  --border:           #212421;
+  --border-subtle:    #191B19;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-muted: var(--muted);
-  --color-gold: var(--gold);
-  --color-forest: var(--forest);
-  --color-surface: var(--surface);
+  --color-background:       var(--background);
+  --color-surface:          var(--surface);
+  --color-cards:            var(--cards);
   --color-surface-elevated: var(--surface-elevated);
-  --color-border: var(--border);
-  --font-sans: var(--font-dm-sans);
+
+  --color-foreground:       var(--foreground);
+  --color-muted:            var(--muted);
+  --color-subtle:           var(--subtle);
+
+  --color-gold:             var(--gold);
+  --color-gold-muted:       var(--gold-muted);
+
+  --color-border:           var(--border);
+  --color-border-subtle:    var(--border-subtle);
+
+  /* Typography */
+  --font-sans:    var(--font-dm-sans);
   --font-display: var(--font-cormorant);
 }
 
+/* ─────────────────────────────────────────
+   Base
+   ───────────────────────────────────────── */
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background:  var(--background);
+  color:       var(--foreground);
   font-family: var(--font-dm-sans), system-ui, sans-serif;
+  line-height: 1.65;
+  -webkit-font-smoothing:  antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 ::selection {
-  background: color-mix(in srgb, var(--gold) 35%, transparent);
+  background: color-mix(in srgb, var(--gold) 20%, transparent);
   color: var(--foreground);
+}
+
+/* ─────────────────────────────────────────
+   Typography scale
+   ───────────────────────────────────────── */
+
+/* Eyebrow label — used above headings */
+.label {
+  font-size:      0.625rem;   /* 10px */
+  font-weight:    500;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color:          var(--gold);
+}
+
+/* Divider rule */
+.rule {
+  border:  none;
+  border-top: 1px solid var(--border);
+  width:   100%;
+}
+
+/* ─────────────────────────────────────────
+   Transitions
+   ───────────────────────────────────────── */
+* {
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
 }

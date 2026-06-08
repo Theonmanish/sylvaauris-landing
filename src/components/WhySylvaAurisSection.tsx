@@ -2,41 +2,81 @@ import { WHY_FEATURES } from "@/lib/constants";
 import { Section } from "./ui/Section";
 import { SectionHeading } from "./ui/SectionHeading";
 
+// Custom 1px stroke-weight icons matching B&O/Leica minimalist aesthetic
+function IconEcosystem() {
+  return (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" aria-hidden="true" className="text-gold">
+      <path d="M12 3a9 9 0 0 1 9 9v7H3v-7a9 9 0 0 1 9-9Z" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M12 10v6" strokeLinecap="round" />
+      <path d="M9 13a3 3 0 0 1 6 0" strokeLinecap="round" strokeLinejoin="round" />
+      <line x1="3" y1="19" x2="21" y2="19" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+function IconHandcrafted() {
+  return (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" aria-hidden="true" className="text-gold">
+      <path d="M19 21h-6.28a2 2 0 0 1-1.68-.91l-4.12-6.18a2 2 0 0 1 0-2.22l4.12-6.18A2 2 0 0 1 12.72 5H19" strokeLinecap="round" strokeLinejoin="round" />
+      <line x1="15" y1="5" x2="15" y2="21" strokeLinecap="round" />
+      <line x1="11" y1="12" x2="17" y2="12" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+function IconEndure() {
+  return (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" aria-hidden="true" className="text-gold">
+      <polygon points="12 2 2 12 12 22 22 12" strokeLinecap="round" strokeLinejoin="round" />
+      <line x1="12" y1="2" x2="12" y2="22" strokeLinecap="round" />
+      <line x1="2" y1="12" x2="22" y2="12" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+function IconGuidance() {
+  return (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" aria-hidden="true" className="text-gold">
+      <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" strokeLinecap="round" strokeLinejoin="round" />
+      <circle cx="12" cy="13" r="1.5" />
+      <line x1="12" y1="11" x2="12" y2="7" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+const icons = [IconEcosystem, IconHandcrafted, IconEndure, IconGuidance];
+
 export function WhySylvaAurisSection() {
   return (
-    <Section id="philosophy">
-      <div className="grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-20">
-        <div className="order-2 lg:order-1">
-          <div className="aspect-square overflow-hidden rounded-2xl border border-border bg-gradient-to-tr from-forest/25 via-background to-gold/5">
-            <div className="flex h-full items-center justify-center p-8 text-center">
-              <p className="max-w-xs text-sm leading-relaxed text-muted">
-                Philosophy visual placeholder — ideal for a studio portrait or
-                detail shot of terrarium craftsmanship.
+    <Section id="philosophy" className="border-t border-border bg-background">
+      <div className="max-w-3xl mb-16 lg:mb-24">
+        <SectionHeading
+          eyebrow="The Philosophy"
+          title="Designed for longevity. Engineered for trust."
+          description="We do not build for temporary visual appeal. Every installation is composed with physical stability and biological balance as the primary priorities."
+        />
+      </div>
+
+      <div className="grid gap-8 sm:grid-cols-2 lg:gap-12">
+        {WHY_FEATURES.map((feature, i) => {
+          const Icon = icons[i];
+          return (
+            <article
+              key={feature.title}
+              className="flex flex-col bg-cards border border-border p-8 sm:p-10 transition-colors duration-500 hover:border-gold/30"
+            >
+              <div className="mb-6 flex h-10 w-10 items-center justify-center border border-border bg-background">
+                <Icon />
+              </div>
+              <h3 className="font-display text-2xl tracking-[0.01em] text-foreground">
+                {feature.title}
+              </h3>
+              <p className="mt-4 text-[14px] leading-[1.8] text-muted max-w-lg">
+                {feature.description}
               </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="order-1 lg:order-2">
-          <SectionHeading
-            eyebrow="Why Sylva Auris"
-            title="Botanical art for spaces that breathe intention."
-            description="We believe a terrarium should feel inevitable—as though it has always belonged in the room. Every commission begins with listening."
-          />
-
-          <ul className="mt-10 space-y-8">
-            {WHY_FEATURES.map((feature) => (
-              <li key={feature.title} className="border-l border-gold/30 pl-6">
-                <h3 className="font-display text-xl text-foreground">
-                  {feature.title}
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted sm:text-base">
-                  {feature.description}
-                </p>
-              </li>
-            ))}
-          </ul>
-        </div>
+            </article>
+          );
+        })}
       </div>
     </Section>
   );

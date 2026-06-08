@@ -10,10 +10,11 @@ type ButtonProps = {
 
 const variants = {
   primary:
-    "border border-gold/40 bg-gold/10 text-gold hover:border-gold/70 hover:bg-gold/20",
+    "border border-gold/60 text-gold hover:border-gold hover:bg-gold/6",
   secondary:
-    "border border-border bg-surface-elevated text-foreground hover:border-gold/30 hover:text-gold",
-  ghost: "text-muted hover:text-gold",
+    "border border-border text-muted hover:border-border/80 hover:text-foreground",
+  ghost:
+    "text-muted hover:text-foreground",
 };
 
 export function Button({
@@ -26,7 +27,10 @@ export function Button({
     <Link
       href={href}
       className={cn(
-        "inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-medium tracking-wide transition-colors duration-300",
+        "inline-flex items-center justify-center",
+        "px-8 py-3.5",
+        "text-[11px] font-medium uppercase tracking-[0.25em]",
+        "transition-colors duration-300",
         variants[variant],
         className,
       )}
