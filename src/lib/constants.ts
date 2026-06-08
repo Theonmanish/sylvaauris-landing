@@ -1,11 +1,11 @@
 export const SITE_NAME = "Sylva Auris";
 
 export const NAV_LINKS = [
-  { label: "Collection", href: "#collection" },
-  { label: "Philosophy", href: "#philosophy" },
-  { label: "Care", href: "#care" },
-  { label: "Craft", href: "#craft" },
-  { label: "Contact", href: "#contact" },
+  { label: "Collection", href: "/#collection" },
+  { label: "Philosophy", href: "/#philosophy" },
+  { label: "Care", href: "/#care" },
+  { label: "Craft", href: "/#craft" },
+  { label: "Contact", href: "/#contact" },
 ] as const;
 
 export const COLLECTION_ITEMS = [

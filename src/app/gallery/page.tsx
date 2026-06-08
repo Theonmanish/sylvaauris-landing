@@ -3,19 +3,11 @@ import { Container } from "@/components/ui/Container";
 import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
 
-const images = import.meta.glob("/public/terraimages/*.{png,jpg,jpeg,webp}", {
-  eager: true,
-  query: { format: "src" },
-}) as Record<string, { default: string; src: string }>;
-
-const galleryItems = Object.entries(images)
-  .filter(([key]) => !key.includes(".gitkeep"))
-  .sort(([a], [b]) => a.localeCompare(b))
-  .map(([key, mod]) => {
-    const src = mod.default || mod.src;
-    const name = key.replace(/.*[\\/]/, "").replace(/\.\w+$/, "");
-    return { src, name };
-  });
+const galleryItems = [
+  { src: "/terraimages/Fittonia.jpg", name: "image1" },
+  { src: "/terraimages/Misty Glen Oasis.jpg", name: "image2" },
+  { src: "/terraimages/trm1a.jpg", name: "image3" },
+];
 
 export default function GalleryPage() {
   return (
@@ -47,9 +39,7 @@ export default function GalleryPage() {
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
                 </div>
-                <p className="text-[10px] tracking-[0.2em] font-mono text-subtle/60 mt-3">
-                  {item.name}
-                </p>
+                
               </article>
             ))}
           </div>

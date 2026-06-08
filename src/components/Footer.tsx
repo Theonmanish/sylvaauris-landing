@@ -12,35 +12,19 @@ export function Footer() {
           
           {/* Brand Column */}
           <div className="lg:col-span-5">
-            <Link href="/" className="flex items-center gap-3">
-              <svg
-                width="22"
-                height="28"
-                viewBox="0 0 22 28"
-                fill="none"
-                aria-hidden="true"
-                className="text-gold shrink-0"
-              >
-                <path
-                  d="M2 26 Q8 18 14 10 Q18 4 20 2"
-                  stroke="currentColor"
-                  strokeWidth="1.25"
-                  strokeLinecap="round"
-                  fill="none"
+            <Link href="/" className="flex items-center gap-3 group inline-flex">
+              {/* Un-cropped, clean wrapper for logo asset */}
+              <div className="w-8 h-8 flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
+                <img 
+                  src="/logo.png" 
+                  alt="Sylva Auris Logo" 
+                  className="w-full h-full object-contain" 
                 />
-                <path
-                  d="M10 6 Q16 2 18 8 Q14 10 10 6Z"
-                  fill="currentColor"
-                  opacity="0.8"
-                />
-                <path
-                  d="M16 14 Q20 12 20 18 Q16 18 16 14Z"
-                  fill="currentColor"
-                  opacity="0.8"
-                />
-              </svg>
-              <span className="font-display text-xl tracking-[0.08em] text-gold">
-                {SITE_NAME}
+              </div>
+              
+              {/* Brand Title text sitting perfectly right beside the logo */}
+              <span className="font-serif text-xl tracking-wider text-[#fff9e6]/90 antialiased transition-colors duration-300 group-hover:text-foreground">
+                Sylva Auris
               </span>
             </Link>
             <p className="mt-6 max-w-xs text-[13px] leading-relaxed text-muted font-sans">
@@ -81,7 +65,7 @@ export function Footer() {
                   rel="noopener noreferrer"
                   className="hover:text-foreground transition-colors duration-300"
                 >
-                  @sylvaauris
+                  @sylva.auris
                 </a>
               </li>
               <li>
@@ -90,7 +74,7 @@ export function Footer() {
                   href="mailto:studio@sylvaauris.com"
                   className="hover:text-foreground transition-colors duration-300"
                 >
-                  studio@sylvaauris.com
+                  sylvaauris@gmail.com
                 </a>
               </li>
             </ul>
