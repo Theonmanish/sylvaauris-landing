@@ -1,0 +1,9 @@
+export { BuiltForSection } from "./BuiltForSection";
+export { CareCompanionSection } from "./CareCompanionSection";
+export { CollectionSection } from "./CollectionSection";
+export { CraftsmanshipSection } from "./CraftsmanshipSection";
+export { CTASection } from "./CTASection";
+export { Footer } from "./Footer";
+export { HeroSection } from "./HeroSection";
+export { Navbar } from "./Navbar";
+export { WhySylvaAurisSection } from "./WhySylvaAurisSection";
