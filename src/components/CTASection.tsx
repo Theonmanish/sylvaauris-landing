@@ -18,7 +18,7 @@ export function CTASection() {
 
         <div className="mt-12 flex flex-col items-center justify-center">
           <a
-            href="mailto:contact@sylvaauris.in?subject=Atelier%20Commission%20Inquiry"
+            href="mailto:sylvaauris@gmail.com?subject=Atelier%20Commission%20Inquiry"
             className="border border-gold/60 text-gold hover:border-gold hover:bg-gold/6 px-10 py-4 text-[11px] font-medium uppercase tracking-[0.25em] transition-colors duration-300"
           >
             Inquire About A Terrarium

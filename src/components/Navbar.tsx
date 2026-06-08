@@ -2,29 +2,13 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
 import { NAV_LINKS, SITE_NAME } from "@/lib/constants";
-import { cn } from "@/lib/utils";
 import { Container } from "./ui/Container";
 
 export function Navbar() {
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 32);
-    handleScroll();
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <header
-      className={cn(
-        "fixed inset-x-0 top-0 z-50 transition-colors duration-500",
-        isScrolled
-          ? "border-b border-border bg-background/70 backdrop-blur-md"
-          : "bg-black/70 backdrop-blur-md border-b border-[#fff9e6]/[0.08]",
-      )}
+      className="fixed inset-x-0 top-0 z-50 border-b border-border/40 bg-background/70 backdrop-blur-md transition-colors duration-500"
     >
       <Container as="nav" className="flex h-16 items-center justify-between sm:h-20">
         <Link

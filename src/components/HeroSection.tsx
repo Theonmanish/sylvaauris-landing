@@ -7,7 +7,7 @@ export function HeroSection() {
     <section className="relative flex min-h-[96vh] items-center pt-16 sm:pt-20 bg-surface overflow-hidden">
       
       {/* ── Forced Visibility Texture Layer ── */}
-      <div className="absolute inset-0 z-0 pointer-events-none opacity-[0.04]">
+      <div className="absolute inset-0 z-0 pointer-events-none opacity-[0.05]">
         <Image
           src="/paper-texture.webp" 
           alt="Texture"
