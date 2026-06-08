@@ -40,6 +40,18 @@
   /* Typography */
   --font-sans:    var(--font-dm-sans);
   --font-display: var(--font-cormorant);
+
+  /* Animations */
+  --animate-marquee: marquee 35s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    translate: 0%;
+  }
+  to {
+    translate: -50%;
+  }
 }
 
 /* ─────────────────────────────────────────

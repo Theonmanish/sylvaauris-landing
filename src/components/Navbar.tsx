@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { NAV_LINKS, SITE_NAME } from "@/lib/constants";
@@ -7,7 +8,6 @@ import { cn } from "@/lib/utils";
 import { Container } from "./ui/Container";
 
 export function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -17,27 +17,21 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  useEffect(() => {
-    document.body.style.overflow = isOpen ? "hidden" : "";
-    return () => {
-      document.body.style.overflow = "";
-    };
-  }, [isOpen]);
-
   return (
     <header
       className={cn(
         "fixed inset-x-0 top-0 z-50 transition-colors duration-500",
-        isScrolled || isOpen
-          ? "border-b border-border bg-background"
-          : "bg-transparent",
+        isScrolled
+          ? "border-b border-border bg-background/70 backdrop-blur-md"
+          : "bg-black/70 backdrop-blur-md border-b border-[#fff9e6]/[0.08]",
       )}
     >
       <Container as="nav" className="flex h-16 items-center justify-between sm:h-20">
         <Link
           href="/"
-          className="font-display text-lg tracking-[0.22em] text-foreground transition-[letter-spacing] duration-500 hover:tracking-[0.3em] sm:text-xl"
+          className="flex items-center gap-2 font-display text-lg tracking-[0.22em] text-foreground transition-[letter-spacing] duration-500 hover:tracking-[0.3em] sm:text-xl"
         >
+          <Image src="/logo.png" alt={SITE_NAME} width={28} height={28} className="size-7" />
           {SITE_NAME}
         </Link>
 
@@ -55,55 +49,16 @@ export function Navbar() {
           ))}
         </ul>
 
-        {/* Mobile toggle */}
-        <button
-          type="button"
-          aria-expanded={isOpen}
-          aria-label="Toggle navigation menu"
-          className="relative z-50 flex h-9 w-9 flex-col items-center justify-center gap-[5px] md:hidden"
-          onClick={() => setIsOpen((open) => !open)}
+        {/* Mobile CTA */}
+        <a
+          href="https://care.sylvaauris.in"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="border border-gold/50 px-5 py-2 text-[10px] uppercase tracking-[0.25em] text-gold transition-colors duration-300 hover:border-gold hover:text-foreground md:hidden"
         >
-          <span
-            className={cn(
-              "block h-px w-5 bg-foreground transition-transform duration-300",
-              isOpen && "translate-y-[7px] rotate-45",
-            )}
-          />
-          <span
-            className={cn(
-              "block h-px w-5 bg-foreground transition-opacity duration-300",
-              isOpen && "opacity-0",
-            )}
-          />
-          <span
-            className={cn(
-              "block h-px w-5 bg-foreground transition-transform duration-300",
-              isOpen && "-translate-y-[7px] -rotate-45",
-            )}
-          />
-        </button>
+          Care
+        </a>
       </Container>
-
-      {/* Mobile overlay — solid, no blur */}
-      <div
-        className={cn(
-          "fixed inset-0 z-40 bg-background transition-opacity duration-400 md:hidden",
-          isOpen ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0",
-        )}
-      >
-        <Container className="flex h-full flex-col justify-center gap-10 pt-20">
-          {NAV_LINKS.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="font-display text-4xl tracking-[0.04em] text-foreground transition-colors duration-200 hover:text-gold"
-              onClick={() => setIsOpen(false)}
-            >
-              {link.label}
-            </Link>
-          ))}
-        </Container>
-      </div>
     </header>
   );
 }

@@ -12,11 +12,36 @@ export function Footer() {
           
           {/* Brand Column */}
           <div className="lg:col-span-5">
-            <Link
-              href="/"
-              className="font-display text-xl tracking-[0.25em] text-foreground block hover:text-gold transition-colors duration-300"
-            >
-              {SITE_NAME}
+            <Link href="/" className="flex items-center gap-3">
+              <svg
+                width="22"
+                height="28"
+                viewBox="0 0 22 28"
+                fill="none"
+                aria-hidden="true"
+                className="text-gold shrink-0"
+              >
+                <path
+                  d="M2 26 Q8 18 14 10 Q18 4 20 2"
+                  stroke="currentColor"
+                  strokeWidth="1.25"
+                  strokeLinecap="round"
+                  fill="none"
+                />
+                <path
+                  d="M10 6 Q16 2 18 8 Q14 10 10 6Z"
+                  fill="currentColor"
+                  opacity="0.8"
+                />
+                <path
+                  d="M16 14 Q20 12 20 18 Q16 18 16 14Z"
+                  fill="currentColor"
+                  opacity="0.8"
+                />
+              </svg>
+              <span className="font-display text-xl tracking-[0.08em] text-gold">
+                {SITE_NAME}
+              </span>
             </Link>
             <p className="mt-6 max-w-xs text-[13px] leading-relaxed text-muted font-sans">
               Handcrafted enclosed ecosystems. Made by appointment for residential, commercial, and studio environments.
@@ -68,27 +93,16 @@ export function Footer() {
                   studio@sylvaauris.com
                 </a>
               </li>
-              <li>
-                <span className="text-subtle block text-[9px] uppercase tracking-wider mb-1">Phone</span>
-                <a
-                  href="tel:+3225550192"
-                  className="hover:text-foreground transition-colors duration-300"
-                >
-                  +32 (0) 2 555 0192
-                </a>
-              </li>
             </ul>
           </div>
 
         </div>
 
         {/* Legal & Copyright */}
-        <div className="mt-20 pt-8 border-t border-border/40 flex flex-col gap-4 text-[11px] text-subtle sm:flex-row sm:items-center sm:justify-between font-mono">
-          <p>© {year} {SITE_NAME.toUpperCase()}. ALL RIGHTS RESERVED.</p>
-          <div className="flex gap-6">
-            <a href="#privacy" className="hover:text-muted transition-colors duration-300">PRIVACY</a>
-            <a href="#terms" className="hover:text-muted transition-colors duration-300">TERMS</a>
-          </div>
+        <div className="mt-20 pt-8 border-t border-border/40 text-center">
+          <p className="text-[9px] tracking-[0.35em] text-subtle/60 font-mono">
+            © {year} {SITE_NAME.toUpperCase()}. ALL RIGHTS RESERVED.
+          </p>
         </div>
       </Container>
     </footer>

@@ -49,7 +49,7 @@ const icons = [IconEcosystem, IconHandcrafted, IconEndure, IconGuidance];
 export function WhySylvaAurisSection() {
   return (
     <Section id="philosophy" className="border-t border-border bg-background">
-      <div className="max-w-3xl mb-16 lg:mb-24">
+      <div className="max-w-3xl mb-24 lg:mb-32">
         <SectionHeading
           eyebrow="The Philosophy"
           title="Designed for longevity. Engineered for trust."
@@ -57,15 +57,15 @@ export function WhySylvaAurisSection() {
         />
       </div>
 
-      <div className="grid gap-8 sm:grid-cols-2 lg:gap-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-24">
         {WHY_FEATURES.map((feature, i) => {
           const Icon = icons[i];
           return (
             <article
               key={feature.title}
-              className="flex flex-col bg-cards border border-border p-8 sm:p-10 transition-colors duration-500 hover:border-gold/30"
+              className="flex flex-col md:even:mt-16"
             >
-              <div className="mb-6 flex h-10 w-10 items-center justify-center border border-border bg-background">
+              <div className="mb-6 flex h-10 w-10 items-center justify-center">
                 <Icon />
               </div>
               <h3 className="font-display text-2xl tracking-[0.01em] text-foreground">
