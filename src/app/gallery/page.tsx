@@ -27,7 +27,7 @@ export default function GalleryPage() {
             </p>
           </div>
 
-          <div className="mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 bg-[#0B0C0B] px-6 py-20">
+          <div className="mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 py-20">
             {galleryItems.map((item) => (
               <article key={item.name} className="flex flex-col">
                 <div className="relative aspect-[4/5] w-full bg-[#0B0C0B] overflow-hidden">

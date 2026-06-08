@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { NAV_LINKS, SITE_NAME } from "@/lib/constants";
 import { Container } from "./ui/Container";
@@ -15,10 +16,12 @@ export function Footer() {
             <Link href="/" className="flex items-center gap-3 group inline-flex">
               {/* Un-cropped, clean wrapper for logo asset */}
               <div className="w-8 h-8 flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
-                <img 
-                  src="/logo.png" 
-                  alt="Sylva Auris Logo" 
-                  className="w-full h-full object-contain" 
+                <Image
+                  src="/logo.png"
+                  alt="Sylva Auris Logo"
+                  width={32}
+                  height={32}
+                  className="object-contain"
                 />
               </div>
               

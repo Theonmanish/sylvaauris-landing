@@ -18,6 +18,7 @@ export const metadata: Metadata = {
   title: "Sylva Auris | Premium Living Terrariums",
   description:
     "Handcrafted enclosed botanical installations for discerning interiors. Premium terrarium commissions by Sylva Auris.",
+  icons: [{ rel: "icon", url: "/logo.png", type: "image/png" }],
 };
 
 export default function RootLayout({
