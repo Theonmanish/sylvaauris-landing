@@ -13,7 +13,7 @@ export function CTASection() {
         </h2>
 
         <p className="mt-8 text-[15px] sm:text-[17px] leading-[1.8] text-muted max-w-xl mx-auto font-sans">
-          Whether you're seeking a personal desktop ecosystem, a statement display piece, or a custom composition for a particular space, we would be pleased to discuss the possibilities with you.
+          Whether you&apos;re seeking a personal desktop ecosystem, a statement display piece, or a custom composition for a particular space, we would be pleased to discuss the possibilities with you.
         </p>
 
         <div className="mt-12 flex flex-col items-center justify-center">
