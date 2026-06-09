@@ -39,7 +39,7 @@ function IconProblems() {
 
 const features = [
   {
-    title: "Plant Taxonomy",
+    title: "Botanical Profile",
     desc: "A curated list of every botanical species thriving inside your specific vessel.",
     icon: IconProfile,
   },
@@ -54,7 +54,7 @@ const features = [
     icon: IconVentilation,
   },
   {
-    title: "Diagnostics & Resolution",
+    title: "Care Diagnostics",
     desc: "Practical solutions for common issues, moss discoloration, and plant maintenance.",
     icon: IconProblems,
   },
@@ -67,7 +67,7 @@ export function CareCompanionSection() {
         <SectionHeading
           eyebrow="Care Companion"
           title="Intelligent care, calibrated to your environment."
-          description="Intelligent care, calibrated to your environment. Every Sylva Auris system includes an interactive digital care companion. Access tailored light, humidity, and maintenance profiles specific to your vessel’s botanical layout to ensure lifelong stability."
+          description="Every Sylva Auris terrarium includes access to the Care Companion — a dedicated digital guide tailored to its ecosystem. From species information and watering schedules to environmental recommendations and troubleshooting support, it provides ongoing guidance long after the terrarium leaves the atelier."
           className="mb-12 lg:mb-16"
         />
 

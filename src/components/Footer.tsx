@@ -32,7 +32,7 @@ export function Footer() {
               </span>
             </Link>
             <p className="mt-6 max-w-xs text-[13px] leading-relaxed text-muted font-sans">
-              Handcrafted enclosed ecosystems, tailored for residential, hospitality, and workspace environments.
+              Handcrafted Living Terrariums • Designed To Endure • Crafted Locally
             </p>
           </div>
 
@@ -93,8 +93,9 @@ export function Footer() {
                 >
                   <MapPin className="size-4 shrink-0 mt-0.5 text-gold" />
                   <span>
-                    Soans Farm, Moodbidri,
-                    <br />Mangalore, DK
+                    Soans Farm
+                    <br />
+                    Moodbidri, Karnataka
                   </span>
                 </a>
               </li>

@@ -8,7 +8,7 @@ export function BuiltForSection() {
       <SectionHeading
         eyebrow="Placement Venues"
         title="Botanical art, scaled to belong."
-        description="We compositionally adapt each terrarium to the unique layout, light levels, and architectural scale of its destination."
+        description="Each terrarium is thoughtfully composed to complement the light, scale, and character of its destination."
         align="center"
         className="mx-auto"
       />

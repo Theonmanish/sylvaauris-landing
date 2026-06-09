@@ -5,7 +5,7 @@ export function CTASection() {
     <Section id="contact" className="border-t border-border bg-background pb-32 sm:pb-40">
       <div className="max-w-4xl mx-auto text-center">
         <p className="text-[10px] font-medium uppercase tracking-[0.45em] text-gold mb-8">
-          The Atelier
+          Begin Your Terrarium Journey
         </p>
 
         <h2 className="font-display text-5xl sm:text-7xl lg:text-8xl leading-[1.02] tracking-[-0.02em] text-foreground">
@@ -13,7 +13,7 @@ export function CTASection() {
         </h2>
 
         <p className="mt-8 text-[15px] sm:text-[17px] leading-[1.8] text-muted max-w-xl mx-auto font-sans">
-          Handcrafted living ecosystems designed to thrive.
+          Whether you're seeking a personal desktop ecosystem, a statement display piece, or a custom composition for a particular space, we would be pleased to discuss the possibilities with you.
         </p>
 
         <div className="mt-12 flex flex-col items-center justify-center">
@@ -21,7 +21,7 @@ export function CTASection() {
             href="mailto:sylvaauris@gmail.com?subject=Atelier%20Commission%20Inquiry"
             className="border border-gold/60 text-gold hover:border-gold hover:bg-gold/6 px-10 py-4 text-[11px] font-medium uppercase tracking-[0.25em] transition-colors duration-300"
           >
-            Inquire About A Terrarium
+            Start An Inquiry
           </a>
         </div>
       </div>

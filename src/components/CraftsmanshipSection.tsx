@@ -12,9 +12,9 @@ export function CraftsmanshipSection() {
     <Section id="craft" className="border-t border-border bg-background">
       <div className="mx-auto max-w-3xl">
         <SectionHeading
-          eyebrow="Craftsmanship"
+          eyebrow="The Making"
           title="Four movements. One enduring composition."
-          description="From raw geological elements to balanced micro-climates, each movement is executed with deliberate care ."
+          description="Every terrarium begins with the careful selection of glass, stone, substrate, moss, and plant material. Each layer is assembled by hand, allowing the composition to emerge gradually through observation and refinement. No two ecosystems are identical; each develops its own character over time. The result is a living piece shaped equally by craftsmanship and nature."
           className="mb-16"
         />
 

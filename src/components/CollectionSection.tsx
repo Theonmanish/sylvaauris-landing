@@ -41,8 +41,8 @@ export function CollectionSection() {
     <Section id="collection" className="border-t border-border bg-surface">
       <SectionHeading
         eyebrow="The Collection"
-        title="Curated botanical systems."
-        description="Four essential vessels engineered for light, moisture, and botanical harmony. Composed individually by hand."
+        title="Curated living ecosystems."
+        description="Four distinct terrarium forms, each designed for a different scale of space and experience. From compact desktop ecosystems to statement botanical displays, every Sylva Auris terrarium follows the same principles of balance, longevity, and thoughtful design."
       />
 
       {/* Mobile marquee — visible below md */}

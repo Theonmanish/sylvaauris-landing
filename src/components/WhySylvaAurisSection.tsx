@@ -49,11 +49,13 @@ const icons = [IconEcosystem, IconHandcrafted, IconEndure, IconGuidance];
 export function WhySylvaAurisSection() {
   return (
     <Section id="philosophy" className="border-t border-border bg-background">
-      <div className="max-w-3xl mb-24 lg:mb-32">
+      <div className="max-w-3xl mb-24 lg:mb-32 whitespace-pre-line">
         <SectionHeading
           eyebrow="The Philosophy"
-          title="Designed for longevity. Engineered for trust."
-          description="We do not build for temporary visual appeal. Every installation is composed with physical stability and biological balance as the primary priorities."
+          title="Designed for longevity. Crafted for stewardship."
+          description={`We believe nature deserves a more enduring place within modern interiors. Rather than creating disposable decor, we focus on living ecosystems that evolve with time, encouraging a slower and more meaningful connection with the natural world.
+
+              Every Sylva Auris terrarium is composed through four movements: the vessel that frames it, the landscape that grounds it, the life that animates it, and the care that sustains it. Together they form an enduring ecosystem designed to mature beautifully over time.`}
         />
       </div>
 

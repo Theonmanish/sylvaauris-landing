@@ -7,7 +7,7 @@ export function HeroSection() {
     <section className="relative flex min-h-[96vh] items-center pt-16 sm:pt-20 bg-surface overflow-hidden">
       
       {/* ── Forced Visibility Texture Layer ── */}
-      <div className="absolute inset-0 z-0 pointer-events-none opacity-[0.06]">
+      <div className="absolute inset-0 z-0 pointer-events-none opacity-[0.07]">
         <Image
           src="/paper-texture.webp" 
           alt="Texture"
@@ -35,19 +35,18 @@ export function HeroSection() {
             <div className="mt-3 h-px w-16 bg-gold/30" />
 
             <p className="mt-8 max-w-[28rem] text-[15px] leading-[1.85] text-muted">
-              Precision-crafted terrariums paired with interactive care guidance 
-              designed for long-term ecosystem health.
+              Handcrafted living terrariums designed as enduring interior pieces. Each ecosystem is individually composed, locally crafted, and supported through our Care Companion system to help it thrive over time.
+              
             </p>
 
             <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
               <Button href="/gallery">Explore Collections</Button>
               <a
-                href="https://care.sylvaauris.in"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="mailto:sylvaauris@gmail.com?subject=Atelier%20Commission%20Inquiry"
+                
                 className="inline-flex items-center justify-center px-8 py-3.5 text-[11px] font-medium uppercase tracking-[0.25em] transition-colors duration-300 border border-border text-muted hover:border-border/80 hover:text-foreground"
               >
-                Discover Care Companion
+                Inquire About A Terrarium
               </a>
             </div>
           </div>

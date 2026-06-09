@@ -4,7 +4,7 @@ export const NAV_LINKS = [
   { label: "Collection", href: "/#collection" },
   { label: "Philosophy", href: "/#philosophy" },
   { label: "Care", href: "/#care" },
-  { label: "Craft", href: "/#craft" },
+  { label: "Atelier", href: "/#craft" },
   { label: "Contact", href: "/#contact" },
 ] as const;
 
@@ -12,25 +12,25 @@ export const COLLECTION_ITEMS = [
   {
     name: "Micro Terrariums",
     description:
-      "Miniature ecosystems scaled for desks and bedside shelves.",
+      "A compact ecosystem designed for desks, study spaces, and smaller interiors. The Micro collection offers a subtle introduction to terrarium keeping while retaining the detail and character of a complete living landscape.",
     tag: "01 / Series",
   },
   {
     name: "Jar Terrariums",
     description:
-      "Traditional closed cylinders capturing high-humidity mosses and delicate ferns.",
+      "Traditional terrarium proportions paired with contemporary composition. The Jar collection creates an immersive botanical environment that feels equally at home on shelves, side tables, and personal workspaces.",
     tag: "02 / Series",
   },
   {
     name: "Bowl Terrariums",
     description:
-      "Wide glass basins hosting low-profile moss hillsides and structural stone formations.",
+      "An open and expansive interpretation of the terrarium. Designed to showcase depth, texture, and natural composition, the Bowl collection serves as a refined centerpiece for living spaces and shared environments.",
     tag: "03 / Series",
   },
   {
     name: "Cube Terrariums",
     description:
-      "Architectural glass-and-brass enclosures displaying geometric layouts.",
+      "Architectural in form and immersive in presence. The Cube collection transforms the terrarium into a living display piece, offering multiple perspectives into a carefully curated ecosystem.",
     tag: "04 / Series",
   },
 ] as const;
@@ -39,17 +39,17 @@ export const WHY_FEATURES = [
   {
     title: "Living Ecosystems",
     description:
-      "Long-enduring botanical environments featuring a balanced micro-fauna and intuitive moisture cycles.",
+      "Self-sustaining botanical environments designed to evolve gracefully over time.",
   },
   {
     title: "Handcrafted Design",
     description:
-      "Individually composed and calibrated at our atelier to match specific light profiles.",
+      "Individually composed with careful consideration for their future setting.",
   },
   {
-    title: "Built To Endure",
+    title: "Designed To Endure",
     description:
-      "Constructed with premium inert substrate, slow-growing specimens, and structural glass to support decades of stability.",
+      "Constructed with premium inert substrates, slow-growing specimens, and durable glass vessels to support long-term ecological stability.",
   },
   {
     title: "Intelligent Care Guidance",
@@ -107,26 +107,26 @@ export const BUILT_FOR_AUDIENCES = [
   {
     title: "Homes",
     description:
-      "Elevating private libraries, dining tables, and quiet bedside tables with living presence.Introducing a grounding, living presence into intimate environments.",
+      "Introducing a grounding, living presence into intimate environments.",
   },
   {
     title: "Offices",
     description:
-      "Adding structural, self-cleaning focal points to minimalist conference and desk spaces.A calming structural element to balance sharp, modern interiors.",
+      "A calming structural element to balance sharp, modern interiors.",
   },
   {
     title: "Gifts",
     description:
-      "A lasting, low-maintenance living monument to mark milestone occasions and memory.A thoughtful alternative to ephemeral florals, designed to persist for years.",
+      "A thoughtful alternative to ephemeral florals, designed to persist for years.",
   },
   {
     title: "Cafes",
     description:
-      "Intimate green sculptures positioned to dialogue with natural steam and warm light.Crafting a relaxed, sensory layer within social and dining spaces.",
+      "Crafting a relaxed, sensory layer within social and dining spaces.",
   },
   {
     title: "Reception Areas",
     description:
-      "Professional gallery statement at entrance areas, projecting architectural intent.Setting an immediate tone of architectural intent and refined design.",
+      "Setting an immediate tone of architectural intent and refined design.",
   },
 ] as const;
