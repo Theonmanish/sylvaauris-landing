@@ -13,7 +13,7 @@ const IMAGE_MAP: Record<string, string> = {
 function CollectionCard({ item }: { item: (typeof COLLECTION_ITEMS)[number] }) {
   return (
     <article className="group flex w-[260px] flex-col bg-cards border border-border transition-colors duration-500 hover:border-gold/30 md:w-auto">
-      <div className="relative aspect-[3/4] w-full bg-background px-4 pb-4">
+      <div className="relative aspect-square w-full bg-background">
         <Image
           src={IMAGE_MAP[item.name]}
           alt={item.name}
